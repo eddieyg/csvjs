@@ -1,5 +1,5 @@
 # @csvjs/core
-The core module for processing csv
+The core module for processing csv.
 
 ## Usage
 
