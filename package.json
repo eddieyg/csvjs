@@ -2,14 +2,17 @@
   "name": "csvjs",
   "version": "0.0.1",
   "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/eddieyg/freedomfile.git"
+    "url": "https://github.com/eddieyg/csvjs.git"
   },
-  "keywords": [],
+  "keywords": [
+    "csv",
+    "csvjs",
+    "csv-parse",
+    "csv-format"
+  ],
   "author": "eddieyg",
   "email": "eddiezhao@foxmail.com",
   "license": "MIT",
