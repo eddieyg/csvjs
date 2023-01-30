@@ -1,0 +1,14 @@
+{
+  "name": "@csvjs/type",
+  "version": "0.0.1",
+  "description": "Generic types for csvjs packsge.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

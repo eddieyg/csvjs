@@ -1,0 +1,17 @@
+{
+  "name": "@csvjs/core",
+  "version": "0.0.1",
+  "description": "The core module for processing csv",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:w": "vitest watch"
+  },
+  "dependencies": {
+    "@csvjs/type": "workspace:^0.0.1"
+  },
+  "license": "MIT"
+}
