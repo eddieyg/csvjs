@@ -2,7 +2,9 @@
   "name": "csvjs",
   "version": "0.0.1",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "publish:ci": "pnpm -r publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eddieyg/csvjs.git"
