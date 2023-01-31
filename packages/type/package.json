@@ -10,5 +10,18 @@
   },
   "dependencies": {},
   "devDependencies": {},
+  "keywords": [
+    "csv",
+    "csvjs-type",
+    "csv-parse",
+    "csv-format"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddieyg/csvjs.git",
+    "directory": "packages/type"
+  },
+  "author": "eddieyg",
+  "email": "eddiezhao@foxmail.com",
   "license": "MIT"
 }

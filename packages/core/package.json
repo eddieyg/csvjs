@@ -13,5 +13,18 @@
   "dependencies": {
     "@csvjs/type": "workspace:^0.0.1"
   },
+  "keywords": [
+    "csv",
+    "csvjs",
+    "csv-parse",
+    "csv-format"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddieyg/csvjs.git",
+    "directory": "packages/core"
+  },
+  "author": "eddieyg",
+  "email": "eddiezhao@foxmail.com",
   "license": "MIT"
 }
