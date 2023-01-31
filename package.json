@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "publish:ci": "pnpm -r publish"
+    "publish:r": "pnpm publish -r --access public"
   },
   "repository": {
     "type": "git",
