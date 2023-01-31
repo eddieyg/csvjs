@@ -2,7 +2,7 @@ import type {
   csvHeaderKeys,
   CsvRow,
   CsvHeader,
-} from '@csvjs/type'
+} from '@csv-js/type'
 import { removeDoubleQuotes } from './utils'
 
 export function parseCsv (

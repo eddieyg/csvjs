@@ -1,8 +1,8 @@
-# @csvjs/type
-Generic types for csvjs packsge.
+# @csv-js/type
+Generic types for csv-js packsge.
 
 ## Usage
 
 ```
-npm install @csvjs/type --save
+npm install @csv-js/type --save
 ```

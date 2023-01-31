@@ -1,7 +1,7 @@
 import type {
   CsvRow,
   CsvHeader,
-} from '@csvjs/type'
+} from '@csv-js/type'
 import { isUndefined } from './utils'
 
 export function stringifyCsv (

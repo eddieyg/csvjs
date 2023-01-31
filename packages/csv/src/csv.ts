@@ -3,8 +3,8 @@ import type {
   CsvRow,
   CsvOptions,
   csvHeaderKeys,
-} from '@csvjs/type'
-import { downloadCsvFile, isArray, parseCsv, stringifyCsv } from '@csvjs/core'
+} from '@csv-js/type'
+import { downloadCsvFile, isArray, parseCsv, stringifyCsv } from '@csv-js/core'
 
 export default class Csv {
   readonly header: CsvHeader[]

@@ -1,8 +1,8 @@
-# @csvjs/csv
+# @csv-js/csv
 Main module for processing with Csv.
 
 ## Usage
 
 ```
-npm install @csvjs/csv --save
+npm install @csv-js/csv --save
 ```

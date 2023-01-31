@@ -1,7 +1,7 @@
 {
-  "name": "@csvjs/type",
+  "name": "@csv-js/type",
   "version": "0.0.1",
-  "description": "Generic types for csvjs packsge.",
+  "description": "Generic types for csv-js packsge.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

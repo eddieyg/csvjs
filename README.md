@@ -10,22 +10,23 @@ A js library specialized in processing csv data.
 
 ## 📦︎ Packages
 
-- `@csvjs/csv` A class specialized in processing csv data.
-- `@csvjs/core` The core module for processing csv.
-- `@csvjs/type` Generic types for csvjs packsge.
+- `@csv-js/csv` A class specialized in processing csv data.
+- `@csv-js/core` The core module for processing csv.
+- `@csv-js/type` Generic types for csv-js packsge.
 
 ## 👨‍💻 Usage
 
 ### Install
 
 ```shell
-npm install @csvjs/csv --save
+npm install @csv-js/csv --save
 ```
 
 ### Example
 
 ```typescript
-import Csv from '@csvjs/csv'
+import Csv from '@csv-js/csv'
+
 const header = [
   {
     key: 'name',

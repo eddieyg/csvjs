@@ -1,9 +1,9 @@
-# @csvjs/core
+# @csv-js/core
 The core module for processing csv.
 
 ## Usage
 
 
 ```
-npm install @csvjs/core --save
+npm install @csv-js/core --save
 ```

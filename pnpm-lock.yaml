@@ -16,17 +16,20 @@ importers:
 
   packages/core:
     specifiers:
-      '@csvjs/type': workspace:^0.0.1
+      '@csv-js/type': workspace:^0.0.1
     dependencies:
-      '@csvjs/type': link:../type
+      '@csv-js/type': link:../type
 
   packages/csv:
     specifiers:
-      '@csvjs/core': workspace:^0.0.1
-      '@csvjs/type': workspace:^0.0.1
+      '@csv-js/core': workspace:^0.0.1
+      '@csv-js/type': workspace:^0.0.1
     dependencies:
-      '@csvjs/core': link:../core
-      '@csvjs/type': link:../type
+      '@csv-js/core': link:../core
+      '@csv-js/type': link:../type
+
+  packages/type:
+    specifiers: {}
 
 packages:
 

@@ -1,5 +1,5 @@
 {
-  "name": "@csvjs/core",
+  "name": "@csv-js/core",
   "version": "0.0.1",
   "description": "The core module for processing csv",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
     "test:w": "vitest watch"
   },
   "dependencies": {
-    "@csvjs/type": "workspace:^0.0.1"
+    "@csv-js/type": "workspace:^0.0.1"
   },
   "keywords": [
     "csv",
