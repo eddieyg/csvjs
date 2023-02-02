@@ -3,6 +3,7 @@ import type {
   CsvRow,
   CsvHeader,
 } from '@csv-js/type'
+import { CsvSymbol } from './config'
 import { removeDoubleQuotes } from './utils'
 
 export function parseCsv (
@@ -11,8 +12,8 @@ export function parseCsv (
 ): { data: CsvRow[], header: CsvHeader[]} {
   const data: CsvRow[] = []
   const header: CsvHeader[] = []
-  const rows = csvString.split('\r\n')
-  const headerRow = rows.shift()?.split(',') || []
+  const rows = csvString.split(CsvSymbol.Row)
+  const headerRow = rows.shift()?.split(CsvSymbol.Col) || []
 
   // parse header
   if (!headerKeys.length) {
@@ -30,7 +31,7 @@ export function parseCsv (
   // parse data
   rows.forEach(row => {
     const rowData: CsvRow = {}
-    const cols = row.split(',')
+    const cols = row.split(CsvSymbol.Col)
     cols.forEach((col, colIndex) => {
       const key = headerKeys[colIndex]
       rowData[key] = removeDoubleQuotes(col)
