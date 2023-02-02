@@ -3,7 +3,7 @@ import type {
   CsvRow,
   CsvHeader,
 } from '@csv-js/type'
-import { CsvSymbol } from './config'
+import { CsvSymbol, CsvRowSymbolRule } from './config'
 import { removeDoubleQuotes } from './utils'
 
 export function parseCsv (
@@ -12,7 +12,7 @@ export function parseCsv (
 ): { data: CsvRow[], header: CsvHeader[]} {
   const data: CsvRow[] = []
   const header: CsvHeader[] = []
-  const rows = csvString.split(CsvSymbol.Row)
+  const rows = csvString.split(CsvRowSymbolRule)
   const headerRow = rows.shift()?.split(CsvSymbol.Col) || []
 
   // parse header

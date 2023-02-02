@@ -15,19 +15,26 @@ describe('core', () => {
   const csvData = [
     {
       name: 'eddie',
-      age: 20
+      age: '20'
     },
     {
       name: 'jojo',
-      age: 18
+      age: '18'
     }
   ]
   const csvString = 'Name,Age\r\neddie,20\r\njojo,18'
+  const csvStringCR = 'Name,Age\reddie,20\rjojo,18'
   
   test('parseCsv', async () => {
     const { header, data } = parseCsv(csvString, ['name', 'age'])
     expect(JSON.stringify(header)).toBe(JSON.stringify(csvHeader))
-    expect(JSON.stringify(data)).toBe(JSON.stringify(data))
+    expect(JSON.stringify(data)).toBe(JSON.stringify(csvData))
+  })
+
+  test('parseCsv row CR', async () => {
+    const { header, data } = parseCsv(csvStringCR, ['name', 'age'])
+    expect(JSON.stringify(header)).toBe(JSON.stringify(csvHeader))
+    expect(JSON.stringify(data)).toBe(JSON.stringify(csvData))
   })
 
   test('stringifyCsv', async () => {
