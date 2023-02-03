@@ -23,7 +23,7 @@ describe('core', () => {
     }
   ]
   const csvString = 'Name,Age\r\neddie,20\r\njojo,18'
-  const csvStringCR = 'Name,Age\reddie,20\rjojo,18'
+  const csvStringCR = 'Name,Age\reddie,20\njojo,18'
   
   test('parseCsv', async () => {
     const { header, data } = parseCsv(csvString, ['name', 'age'])

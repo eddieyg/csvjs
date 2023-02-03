@@ -6,6 +6,11 @@ import type {
 import { CsvSymbol, CsvRowSymbolRule } from './config'
 import { removeDoubleQuotes } from './utils'
 
+/**
+ * parse csv string to data
+ *   Supported new line char '\r\n' '\r' '\n'
+ *   Not supported col contains char '\r' '\n' ','
+ */
 export function parseCsv (
   csvString: string,
   headerKeys: CsvHeaderKeys = []

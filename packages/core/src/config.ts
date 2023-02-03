@@ -11,4 +11,4 @@ export enum CsvSymbol {
   ColWrap = '"',
 }
 
-export const CsvRowSymbolRule = /\r\n|\r/
+export const CsvRowSymbolRule = /\r\n|\r|\n/
