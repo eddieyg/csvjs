@@ -1,6 +1,6 @@
 {
   "name": "@csv-js/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The core module for processing csv",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
