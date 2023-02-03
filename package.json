@@ -1,6 +1,6 @@
 {
   "name": "csvjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "publish:r": "pnpm publish -r --access public"
