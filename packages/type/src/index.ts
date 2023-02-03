@@ -5,7 +5,7 @@ export interface CsvHeader {
 }
 export type CsvRow = Record<string, any>
 
-export type csvHeaderKeys = Array<string>
+export type CsvHeaderKeys = Array<string>
 
 export interface CsvOptions {
   name?: string

@@ -2,7 +2,7 @@ import type {
   CsvHeader,
   CsvRow,
   CsvOptions,
-  csvHeaderKeys,
+  CsvHeaderKeys,
 } from '@csv-js/type'
 import { downloadCsvFile, isArray, parseCsv, stringifyCsv } from '@csv-js/core'
 
@@ -58,7 +58,7 @@ export default class Csv {
     )
   }
 
-  toHeaderKeys (): csvHeaderKeys {
+  toHeaderKeys (): CsvHeaderKeys {
     return this.header.map(v => v.key)
   }
 
@@ -69,7 +69,7 @@ export default class Csv {
     )
   }
 
-  static import (csvString: string, headerKeys?: csvHeaderKeys, options?: CsvOptions) {
+  static import (csvString: string, headerKeys?: CsvHeaderKeys, options?: CsvOptions) {
     const { data, header } = parseCsv(csvString, headerKeys)
     const instance = new this(header, options)
     instance.append(data)

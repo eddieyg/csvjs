@@ -1,5 +1,5 @@
 import type {
-  csvHeaderKeys,
+  CsvHeaderKeys,
   CsvRow,
   CsvHeader,
 } from '@csv-js/type'
@@ -8,7 +8,7 @@ import { removeDoubleQuotes } from './utils'
 
 export function parseCsv (
   csvString: string,
-  headerKeys: csvHeaderKeys = []
+  headerKeys: CsvHeaderKeys = []
 ): { data: CsvRow[], header: CsvHeader[]} {
   const data: CsvRow[] = []
   const header: CsvHeader[] = []
